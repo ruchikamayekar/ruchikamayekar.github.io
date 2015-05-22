@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('div:visible').addClass('visible_div');
+      });
+    </script>
+    <style>
+      .visible_div {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "one">One</div>
+    <div class = "two">Two</div>
+    <div class = "three">Three</div>
+    <div style = "display:none">Hidden 1</div>
+    <div style = "display:none">Hidden 2</div>
+    <div class = "four">Four</div>
+  </body>
+</html>

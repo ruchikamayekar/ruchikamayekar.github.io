@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<style>
+		</style>
+	</head>
+	<body>
+		<script>
+			$(document).ready(function($) {
+				$('[type = submit]').bind('click', function(){
+					$('table.entry').html('<tr><td>'+ $('[type = text]').val() +'</td></tr>')
+				});
+			});
+		</script>
+		<form>
+			<input type = 'text', name = 'name_entry'/>
+			<input type = 'submit'/>
+		</form>
+		<table border = '1', class = "entry">
+		</table>
+	</body>
+</html>

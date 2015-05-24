@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+			$(document).ready(function($) {
+				$('.off').next().hide();
+				$('span').click(function() {
+					if($(this).hasClass('on')){
+						$(this).next().slideUp();
+						$(this).removeClass('on').addClass('off');
+					}
+					else{
+						$(this).next().slideDown();
+						$(this).removeClass('off').addClass('on');
+					}
+				});
+			});
+		</script>
+		<style>
+			ul{
+				width: 150px;
+				padding: 10px 20px;
+			}
+
+			.on{
+				height: 40px;
+				width: 40px;
+				background: #eee;
+			} 
+
+			.off{
+				background: #ccc;
+			}
+
+			.submenu {
+				
+			}
+
+			li {
+				display: block;
+				padding: 10px 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="main">
+			<li>
+				<span class="on"> Heading 1</span>
+				<ul class="submenu">
+					<li>item 1</li>
+					<li>item 2</li>
+					<li>item 3</li>
+				</ul>
+		    </li>
+			<li>
+				<span class="off"> Heading 2 </span>
+				<ul class="submenu">
+					<li>item 1</li>
+					<li>item 2</li>
+					<li>item 3</li>
+				</ul>
+			</li>
+			<li>
+				<span class="off"> Heading 3 </span>
+				<ul class="submenu">
+					<li>item 1</li>
+					<li>item 2</li>
+					<li>item 3</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

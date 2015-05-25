@@ -1,0 +1,17 @@
+<html>
+ <head>
+   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <style>
+   </style>
+ </head>
+ <body>
+   <script>
+     $(document).ready(function($) {
+       $('#div_1').one('click', function(){
+        alert('This div can no longer be clicked')
+       });
+     });
+   </script>
+   <div id = 'div_1', style = 'border:solid black; width:10%; height:20px; text-align:center'>Click here </div>
+ </body>
+</html>

@@ -8,7 +8,7 @@
 		<script>
 			$(document).ready(function($) {
 				$('[type = submit]').bind('click', function(){
-					$('table.entry').html('<tr><td>'+ $('[type = text]').val() +'</td></tr>')
+					$('table.entry').append('<tr><td>'+ $('[type = text]').val() +'</td></tr>')
 					event.preventDefault()
 				});
 			});

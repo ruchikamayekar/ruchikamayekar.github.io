@@ -9,6 +9,7 @@
 			$(document).ready(function($) {
 				$('[type = submit]').bind('click', function(){
 					$('table.entry').html('<tr><td>'+ $('[type = text]').val() +'</td></tr>')
+					event.preventDefault()
 				});
 			});
 		</script>
